@@ -92,7 +92,7 @@ func (g *Importer) convert(pr gps.ProjectRoot) (*dep.Manifest, *dep.Lock) {
 	packages := make([]base.ImportedPackage, 0, len(g.json.Imports))
 	for _, pkg := range g.json.Imports {
 		// Validate
-		if pkg.ImportPath == "" {
+		if "" == pkg.ImportPath {
 			g.Logger.Println(
 				"  Warning: Skipping project. Invalid godep configuration, ImportPath is required",
 			)
