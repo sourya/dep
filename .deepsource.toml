@@ -5,7 +5,7 @@ name = "go"
 enabled = true
 
   [analyzers.meta]
-  import_path = "github.com/sourya/dep"
+  import_path = "github.com/golang/dep"
   dependencies_vendored = true
 
 [[analyzers]]
